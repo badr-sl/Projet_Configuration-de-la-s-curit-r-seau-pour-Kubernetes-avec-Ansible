@@ -1,0 +1,4 @@
+---
+# tasks file for deploy-service
+- name: Deploy Application Service
+  command: kubectl apply -f {{ playbook_dir }}/kubernetes/services/web-service.yaml
